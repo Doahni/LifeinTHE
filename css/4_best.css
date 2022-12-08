@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body{
+    font-family: "Pretendard Variable", sans-serif "BRBA_B";
+    font-size: 14px;
+    font-weight: 24px;
+    color: #5d5a58;
+}
+
+/*best*/
+#best{
+    background-color: #92c1ca;
+}
+
+.best_inner{
+    width: 1320px;
+    margin: 0 auto;
+    height: 600px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"]+label{
+    display: inline-block;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.conbox{
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    display: none;
+}
+
+input[id="tab01"]:checked~.con1{
+    display: block;
+}
+
+input[id="tab02"]:checked~.con2{
+    display: block;
+}
+
+input[id="tab03"]:checked~.con3{
+    display: block;
+}
+
+input[id="tab04"]:checked~.con4{
+    display: block;
+}
+
+input[id="tab05"]:checked~.con5{
+    display: block;
+}
+
+input[id*="answer"]{
+    display: none;
+}
+
+input[id*="answer"]+label{
+    display: block;
+    padding: 20px;
+    border: 1px solid #e1cdb9;
+    border-bottom: 0;
+    color: #cf6739;
+    font-weight: 800;
+    background: #f2e8df;
+    cursor: pointer;
+    position: relative;
+}
+
+input[id*="answer"]+label em{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    display: inline-block;
+    background: url(../images/down_30.png) 0 0 no-repeat;
+}
+
+input[id*="answer"]+label+div{
+    max-height: 0;
+    transition: all .35s;
+    overflow: hidden;
+}
+
+input[id*="answer"]+label+div p{
+    display: inline-block;
+    padding: 20px;
+    font-weight: 600;
+    background: #cf6739;
+    display: block;
+    color: #f2e8df;
+}
+
+input[id*="answer"]:checked+label+div{
+    max-height: 100px;
+}

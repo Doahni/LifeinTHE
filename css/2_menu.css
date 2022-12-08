@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body{
+    font-family: "Pretendard Variable", sans-serif "BRBA_B";
+    font-size: 14px;
+    font-weight: 24px;
+    color: #5d5a58;
+}
+
+/*menu*/
+#menu{
+    background-color: #ccb8aa;
+}
+
+.menu_inner{
+    width: 1320px;
+    margin: 0 auto;
+    height: 50px;
+
+}
+
+#gnb>li{
+    font-family: "BRBA_B";
+    font-size: 18px;
+    color: #5d5a58;
+}
+
+#gnb>li:hover{
+    color: #343434;
+    transition: all 0.1s;
+}
+
+#gnb>li{
+    display: inline-block;
+    position: relative;
+}
+
+.under{
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #cf6739;
+}
+  
+#gnb li:hover .under{
+    width: 100%;
+    transition: all 0.5s;
+}
+
+
+
+
+/**/
+input[id="menuicon"]{
+    display: none;
+}
+
+input[id="menuicon"]+label{
+    display: block;
+    margin-top: 15px;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[id="menuicon"]+label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background: #343434;
+    transition: all .35s;
+}
+
+input[id="menuicon"]+label span:nth-child(1){
+    top: 0;
+}
+
+input[id="menuicon"]+label span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);/*비슷하게 사용할 수 있는 style top:calc(50% -2.5px); margin-top:-2.5px;*/
+}
+
+input[id="menuicon"]+label span:nth-child(3){
+    bottom: 0;
+}
+
+input[id="menuicon"]:checked+label{
+    z-index: 2;
+}
+
+input[id="menuicon"]:checked+label span{
+    background: #f2e8df;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked+label span:nth-child(2){
+    opacity: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+div[class="sidebar"]{
+    margin-top: 50px;
+    width: 1320px;
+    height: 500px;
+    background: #5d5a58;
+    position: fixed;
+    top: 0;
+    left: -1320px;
+    z-index: 1;
+    transition: all .35s;
+}
+
+input[id="menuicon"]:checked+label+div{
+    left: 210px;
+}
+
+.sidebar .goods ul{
+    float: left;
+    margin: 50px;
+}
+
+.sidebar .goods ul li{
+    font-size: 22px;
+    padding: 10px 0;
+    color: #cf6739;
+}

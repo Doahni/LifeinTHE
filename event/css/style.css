@@ -41,6 +41,7 @@ body{
 .header_inner{
     width: 1320px;
     margin: 0 auto;
+    position: relative;
 }
 
 .header_inner h1{
@@ -61,8 +62,8 @@ body{
     font-size: 16px;
     color: #5d5a58;
     position: absolute;
-    top: 2.6%;
-    left: 30%;
+    top: 22px;
+    left: 300px;
 }
 
 .search_box:focus{
@@ -125,7 +126,7 @@ body{
 
 #gnb>.margin{
     padding-left: 100px;
-    margin-top: 13px;
+    margin-top: 15px;
 }
 
 .under{
@@ -250,6 +251,10 @@ input[id="menuicon"]:checked+label+div{
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  #event_banner img{
+    width: 100%;
   }
 
 /*event*/

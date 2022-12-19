@@ -279,8 +279,8 @@ input[id="menuicon"]:checked+label+div{
     width: 400px;
     height: 400px;
 }
-#event .box_1, #event .box_2 img:hover{
-    opacity: 90%;
+#event .box_1 img:hover, #event .box_2 img:hover{
+    opacity: 70%;
     transition: all 0.1s;
 }
 .bg{
@@ -298,6 +298,7 @@ padding-top: 20px;
 .box_1 h3, .box_2 h3{
     color: #cf6739;
     font-size: 24px;
+    padding-top: 15px;
 }
 
 .box_2{
@@ -314,23 +315,23 @@ padding-top: 20px;
 }
 
 .box_3 h3{
-    color: #5d5a58;
+    color: #86acb6;
     font-size: 24px;
+    padding-top: 15px;
 }
 
 .box_3 .bg .black_box{
-    background-color: rgba(0, 0, 0, 0.2);
-      color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
       width: 400px;
       height: 400px;
       padding-top: 120px;
       box-sizing: border-box;
       position: relative;
-      top: -480px;
+      top: -470px;
 }
 
 .box_3 .bg .black_box:hover{
-    opacity: 80%;
+    opacity: 70%;
     transition: all 0.1s;
 }
 
@@ -376,21 +377,31 @@ padding-top: 20px;
 
 #event .win .gnb h2{
     font-size: 24px;
+    padding-top: 8px;
     padding-left: 10px;
 }
 
-#event .win .gnb .gift{
+#event .win .gnb li:nth-child(4){
+    float: right;
+    padding-top: 6.75px;
+    font-weight: 600;
+}
+
+#event .win .gnb li:nth-child(3){
+    font-size: 16px;
+    font-weight: 600;
     padding-top: 6.75px;
     padding-left: 200px;
 }
-#event .win .gnb .gift:hover, #event .win .gnb .add:hover{
+
+#event .win .gnb li:nth-child(3):hover{
     text-decoration: underline;
     transition: all 0.1s;
 }
 
-#event .win .gnb .add{
-    float: right;
-    padding-top: 6.75px;
+#event .win .gnb li:nth-child(4):hover{
+    text-decoration: underline;
+    transition: all 0.1s;
 }
 
 /*footer*/

@@ -464,16 +464,16 @@ input[id*="answer"]+label+div{
     max-height: 0;
     transition: all .35s;
     overflow: hidden;
+    background: #cf6739;
+    width: 1320px;
 }
 
 input[id*="answer"]+label+div p{
-    display: inline-block;
     padding: 20px;
     font-weight: 600;
-    background: #cf6739;
-    display: block;
     color: #f2e8df;
     padding-left: 100px;
+    width: 1000px;
 }
 
 input[id*="answer"]:checked+label+div{
@@ -543,21 +543,21 @@ input[id*="answer"]:checked+label+div{
 .qna_text .board-table a{
     color: #ccb8aa;
     display: inline-block;
-    line-height: 1.4;
     word-break: break-all;
     vertical-align: middle;
+    line-height: 18px;
 }
 
 .qna_text .board-table span{
     color: #343434;
 }
 
-.qna_text .board-table img{
-    margin-right: 20px;
+.qna_text .board-table span:hover{
+    text-decoration: underline;
 }
 
-.qna_text .board-table a:hover{
-    text-decoration: underline;
+.qna_text .board-table img{
+    margin-right: 20px;
 }
 
 .qna_text .board-table th{

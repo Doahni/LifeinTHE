@@ -267,6 +267,7 @@ input[id="menuicon"]:checked+label+div{
     font-size: 80px;
     padding-bottom: 30px;
     text-shadow: 5px 5px 2px #ccb8aa;
+    padding-top: 30px;
 }
 
 .slogan_inner .text h2{
@@ -340,16 +341,53 @@ input[id="menuicon"]:checked+label+div{
 .hope_inner .box .circle h2{
     color: #cf6739;
     font-size: 50px;
-    margin-top: 15px;
+    margin-top: 40px;
 }
 .hope_inner .box .circle p{
     font-weight: 600;
     line-height: 22px;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .hope_inner .box{
     padding-bottom: 50px;
+}
+
+/*logo*/
+#logo{
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.logo_inner{
+    display: flex;
+    justify-content: center;
+}
+
+.logo_inner p{
+    font-size: 60px;
+    font-weight: 600;
+    padding: 125px 50px;
+}
+
+.logo_inner.left{
+    padding-top: 10px;
+}
+
+.logo_inner .right{
+    padding-top: 77.5px;
+}
+
+#logo .main{
+    text-align: center;
+    padding-top: 100px;
+}
+#logo .main p{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 30px;
+    line-height: 30px;
 }
 
 /*card*/
@@ -474,7 +512,7 @@ input[id="menuicon"]:checked+label+div{
 }
 
 #map .load{
-    padding: 250px 120px;
+    padding: 250px 200px;
 }
 
 #map .load h2{
@@ -486,7 +524,8 @@ input[id="menuicon"]:checked+label+div{
 #map .load p{
     font-size: 20px;
     font-weight: 600;
-    color: #cf6739;
+    color: #f2e8df;
+    line-height: 26px;
 }
 
 #map iframe{
